@@ -1,0 +1,17 @@
+# Ignore node_modules
+node_modules/
+
+# Ignore DFX-generated files
+.dfx/
+
+# Ignore build artifacts
+*.wasm
+*.lock
+
+# Ignore IDE and OS junk
+.DS_Store
+*.log
+
+
+# environment variables
+.env

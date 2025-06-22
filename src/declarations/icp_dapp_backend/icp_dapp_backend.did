@@ -1,0 +1,7 @@
+service : {
+  "create_item": (nat32, text) -> ();
+  "read_item": (nat32) -> (opt text) query;
+  "update_item": (nat32, text) -> ();
+  "delete_item": (nat32) -> ();
+}
+

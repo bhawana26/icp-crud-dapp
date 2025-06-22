@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "icp_dapp_backend": {
+      "candid": "src/icp_dapp_backend/icp_dapp_backend.did",
+      "package": "icp_dapp_backend",
+      "type": "rust"
+    },
+    "icp_dapp_frontend": {
+      "dependencies": [
+        "icp_dapp_backend"
+      ],
+      "source": [
+        "src/icp_dapp_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "icp_dapp_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
